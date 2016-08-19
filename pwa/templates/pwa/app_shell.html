@@ -5,21 +5,17 @@
 		<link rel="stylesheet" href='../../static/css/reset.css'>
 		<link rel="stylesheet" href='../../static/css/pwa.css'>
 		<link rel="manifest" href="../../static/json/manifest.json">
+		<script src="../../static/js/idb-keyval.js"></script>
 	</head>
 <body>
 	<header class="header">
 		<h1 class="header__title">GSW IT Finance SAP Consultant</h1>
-		<button id="butAbout" class="headerButton" aria-labael="About"></button>
-		<button id="butContact" class="headerButton" aria-labael="Contact"></button>
-		<button id="butBlog" class="headerButton" aria-labael="Blog"></button>
+		<button id="butAbout" class="headerButton" aria-label="About"></button>
+		<button id="butContact" class="headerButton" aria-label="Contact"></button>
+<!--		<button id="butBlog" class="headerButton" aria-label="Blog"></button> -->
 	</header>
 	<nav>
 		nav
-		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#blog">Blog</a></li>
-		</ul>
 	</nav>
 	<main>
 		main
@@ -37,6 +33,14 @@
 		footer
 	</footer>	
 </body>
-
+<script type="text/javascript">
+    document.getElementById("butAbout").onclick = function () {
+        location.href = "#about";
+    };
+    document.getElementById("butContact").onclick = function () {
+        location.href = "#contact";
+    };
+</script>
+<script src="../../static/js/pwa_app.js" %}"></script>
 </html>
 

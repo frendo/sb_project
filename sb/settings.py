@@ -25,8 +25,7 @@ SECRET_KEY = 'wr=vwr(x!6gjm+n)hxt1c80!gl6j5@g0i+p)d1hpe*%=0dsrqt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [os.path.join(BASE_DIR, "templates"), 'geewatt.pythonanywhere.com', 'graemestewartwatt.com']
 
 # Application definition
 
@@ -37,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_user_agents',
     'pwa',
 ]
 
