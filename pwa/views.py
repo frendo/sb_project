@@ -12,3 +12,9 @@ def sw_js(request, js):
     template = get_template('pwa/service-worker.js')
     html = template.render()
     return HttpResponse(html, content_type="application/x-javascript")
+
+@never_cache
+def ssl_ca(request):
+    template = get_template('pwa/www.geewatt.pythonanywhere.com.html')
+    html = template.render()
+    return HttpResponse(html) 
